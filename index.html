@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diana Assignment Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="header-content">
+            <h1>Welcome to My Calculator</h1>
+            <p>Hai Sobat, Selamat datang :)</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#segitiga">Segitiga</a>
+        <a href="#jajar-genjang">Jajar Genjang</a>
+    </nav>
+
+    <section id="segitiga">
+        <h2>Luas Segitiga</h2>
+        <div class="triangle-form">
+            <img src="assets/segitiga.png" alt="segitiga.png">
+            <p>Rumus Luas Segitiga Yaitu :</p>
+            <p>L = 1/2 x a x t</p>
+            <p>Di mana :<br>
+            L = Luas<br>
+            a = Panjang Alas<br>
+            t = Tinggi</p>
+            <h2>Hitung Luas Segitiga</h2>
+            <form onsubmit="calculateArea(event)">
+                <input type="text" id="alas" placeholder="Panjang Alas" required>
+                <input type="text" id="tinggi" placeholder="Tinggi" required><br>
+                <button type="submit">Hitung</button>
+                <button type="reset">Reset</button>
+            </form>
+            <p id="result"></p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
