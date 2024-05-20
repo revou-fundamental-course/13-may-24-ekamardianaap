@@ -16,13 +16,14 @@
     </header>
 
     <nav>
-        <a href="#segitiga">Segitiga</a>
-        <a href="#jajar-genjang">Jajar Genjang</a>
+        <a href="#luassegitiga" onclick="showSection('luassegitiga')">Luas Segitiga</a>
+        <a href="#kelilingsegitiga" onclick="showSection('kelilingsegitiga')">Keliling Segitiga</a>
     </nav>
 
-    <section id="segitiga">
-        <h2>Luas Segitiga</h2>
-        <div class="triangle-form">
+    <section id="luassegitiga">
+    <h2>Luas Segitiga</h2>
+    <div class="triangle-form">
+        <form onsubmit="calculateArea(event)">
             <img src="assets/segitiga.png" alt="segitiga.png">
             <p>Rumus Luas Segitiga Yaitu :</p>
             <p>L = 1/2 x a x t</p>
@@ -30,16 +31,42 @@
             L = Luas<br>
             a = Panjang Alas<br>
             t = Tinggi</p>
-            <h2>Hitung Luas Segitiga</h2>
-            <form onsubmit="calculateArea(event)">
+            <h1>Hitung Luas Segitiga</h1>
+            <div class="form-inputs">
                 <input type="text" id="alas" placeholder="Panjang Alas" required>
                 <input type="text" id="tinggi" placeholder="Tinggi" required><br>
                 <button type="submit">Hitung</button>
                 <button type="reset">Reset</button>
-            </form>
+            </div>
             <p id="result"></p>
-        </div>
-    </section>
+        </form>
+    </div>
+</section>
+
+<section id="kelilingsegitiga">
+    <h2>Keliling Segitiga</h2>
+    <div class="triangle-form">
+        <form onsubmit="calculatePerimeter(event)">
+            <img src="assets/segitiga.png" alt="segitiga.png">
+            <p>Rumus Keliling Segitiga Yaitu : </p>
+            <p>K = S1 + S2 + S3 </p>
+            <p>Di mana : <br>
+            K = Keliling <br>
+            S1 = Sisi A <br>
+            S2 = Sisi B <br>
+            S3 = Sisi C </p>
+            <h1>Hitung Keliling Segitiga</h1>
+            <div class="form-inputs">
+                <input type="text" id="sisi1" placeholder="Panjang Sisi 1" required>
+                <input type="text" id="sisi2" placeholder="Panjang Sisi 2" required>
+                <input type="text" id="sisi3" placeholder="Panjang Sisi 3" required><br>
+                <button type="submit">Hitung</button>
+                <button type="reset">Reset</button>
+            </div>
+            <p id="result_perimeter"></p>
+        </form>
+    </div>
+</section>
 
     <script src="js/script.js"></script>
 </body>
