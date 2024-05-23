@@ -1,5 +1,4 @@
 // script.js - Luas Segitiga
-
 function calculateArea(event) {
     event.preventDefault();
     const alas = parseFloat(document.getElementById('alas').value);
@@ -15,7 +14,6 @@ function calculateArea(event) {
 }
 
 // script.js - Keliling Segitiga
-
 function calculatePerimeter(event) {
     event.preventDefault();
     
